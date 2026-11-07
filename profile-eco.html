@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Local Guide Profile (Eco)</title>
+<meta name="description" content="Licensed local guide: story, packages, gallery, reviews and FAQ.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,600;0,800;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles-eco.css">
+</head>
+<body>
+<header class="nav" id="nav">
+  <a href="#top" class="brand"><svg viewBox="0 0 24 24"><path d="M5 19C5 10 10 4 20 4c0 9-5 15-13 15M5 19l8-8"/></svg><span><b id="logo"></b><small id="brandSub"></small></span></a>
+  <nav>
+    <a href="#story">My Story</a><a href="#packages">Tours</a><a href="#gallery">Gallery</a><a href="#about">About Me</a><a href="#reviews">Reviews</a><a href="#faq">FAQ</a>
+  </nav>
+  <a class="btn dark" href="#contact">Plan Your Trip <i>→</i></a>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="hero-media" id="slides"></div>
+    <div class="hero-copy">
+      <p class="kicker" id="kicker"></p>
+      <h1 id="headline"></h1>
+      <p class="lead" id="intro"></p>
+      <a class="btn dark" href="#packages">See My Tours <i>→</i></a>
+      <ul class="perks" id="perks"></ul>
+    </div>
+    <p class="script">Good Places,<br>Brighter People<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6 6 4 12 6 20c8-1 14-6 14-18C16 1 14 1 12 2ZM6 20C9 14 12 10 16 7"/></svg></p>
+    <div class="dots" id="dots"></div>
+  </section>
+
+  <section class="sec" id="story">
+    <div class="story">
+      <figure class="portrait"><img id="photo" alt="Portrait of the guide"><figcaption id="licBadge"></figcaption></figure>
+      <div>
+        <h2>My <em>story</em></h2>
+        <div class="prose" id="storyText"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec paper" id="packages">
+    <div class="head"><div><h2>My Tour Packages</h2><p>Experiences I plan around you.</p></div><a class="btn light" href="#contact">Enquire <i>→</i></a></div>
+    <div class="grid3" id="packageList"></div>
+  </section>
+
+  <section class="band" id="stats">
+    <h2>My Years on the Road</h2>
+    <p>Real stories, real roads, and travellers who come back.</p>
+    <div class="stats" id="statList"></div>
+  </section>
+
+  <section class="sec" id="gallery">
+    <div class="head"><div><h2>My Photo Gallery</h2><p>Moments from my road. Tap a photo to see it larger.</p></div></div>
+    <div class="grid3 gal" id="galleryGrid"></div>
+  </section>
+
+  <section class="sec paper" id="about">
+    <div class="head"><div><h2>About Me</h2><p>My details, the languages I speak and my experience.</p></div></div>
+    <div class="about">
+      <div class="card pad"><h3>My details</h3><dl class="facts" id="facts"></dl></div>
+      <div class="card pad"><h3>Languages I speak</h3><div id="langs"></div></div>
+      <div class="card pad"><h3>My experience</h3><ol class="timeline" id="timeline"></ol></div>
+    </div>
+  </section>
+
+  <section class="sec" id="reviews">
+    <div class="head"><div><h2>What My Travellers Say</h2><p>Kind words from people I've shown around.</p></div>
+      <div class="arrows"><button id="prev" aria-label="Previous">←</button><button id="next" aria-label="Next">→</button></div></div>
+    <div class="reviews" id="reviewList"></div>
+  </section>
+
+  <section class="sec narrow" id="faq">
+    <div class="head"><div><h2>Good Questions</h2><p>What travellers ask me most before booking.</p></div></div>
+    <div id="faqList"></div>
+  </section>
+
+  <section class="cta" id="contact">
+    <div class="cta-copy">
+      <p class="kicker">Let's plan your trip</p>
+      <h2>Ready to Explore<br>with Me?</h2>
+      <p>Book your next adventure and let me show you the island I call home.</p>
+      <div class="row"><a class="btn dark" id="wa" target="_blank" rel="noopener">WhatsApp me <i>→</i></a><a class="btn light" id="mail">Send an email</a></div>
+    </div>
+    <p class="script">Good Travel,<br>Brighter Tomorrows</p>
+  </section>
+</main>
+<footer id="foot"></footer>
+
+<div class="lightbox" id="lb" hidden><button class="lb-close" aria-label="Close">×</button><img id="lbImg" alt=""><p id="lbCap"></p></div>
+<script src="data.js"></script>
+<script src="app-eco.js"></script>
+</body>
+</html>

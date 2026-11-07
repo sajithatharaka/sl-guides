@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Local Guide Profile</title>
+<meta name="description" content="Licensed local guide: story, packages, gallery, reviews and FAQ.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="top">
+  <a href="#top" id="logo"></a>
+  <nav><a href="#story">Story</a><a href="#packages">Packages</a><a href="#gallery">Gallery</a><a href="#reviews">Reviews</a><a href="#faq">FAQ</a><a href="#contact">Contact</a></nav>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="slides" id="slides"></div>
+    <div class="dots" id="dots"></div>
+    <img id="photo" alt="Portrait of the guide">
+    <h1 id="name"></h1>
+    <p id="tagline"></p>
+    <p class="sub" id="intro"></p>
+    <span class="scroll">scroll ↓</span>
+  </section>
+
+  <div class="trail" id="trail">
+    <svg class="path" id="svg" aria-hidden="true"><path id="pathBg"/><path id="pathFg"/></svg>
+    <svg class="pin" id="pin" viewBox="0 0 40 56" aria-hidden="true">
+      <ellipse class="ring" cx="20" cy="50" rx="10" ry="4"/>
+      <g class="pinbody"><path d="M20 4C11 4 5 10.5 5 18.5 5 29 20 46 20 46s15-17 15-27.500C35 10.500 29 4 20 4Z"/><circle cx="20" cy="18.500" r="5.500"/></g>
+    </svg>
+    <div class="walker" id="walker" aria-hidden="true"><i></i></div>
+    <div id="stops"></div>
+  </div>
+</main>
+<footer id="foot"></footer>
+
+<div class="lightbox" id="lb" hidden><button class="lb-close" aria-label="Close">×</button><img id="lbImg" alt=""><p id="lbCap"></p></div>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
